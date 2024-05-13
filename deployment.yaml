@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mi-deployment
+  namespace: vallegrande
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mi-app
+  template:
+    metadata:
+      labels:
+        app: mi-app
+spec:
+  containers:
+  - name: mi-container
+    image: jhanmarcogodoylevano/container:latest  
+    ports:
+    - containerPort: 8080
+    resources:
+      limits:
+        cpu: "0.5"
+      requests:
+        cpu: "0.2"

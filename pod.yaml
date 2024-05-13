@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mi-pod
+  namespace: vallegrande
+spec:
+  containers:
+  - name: mi-container
+    image: jhanmarcogodoylevano/container:latest
+    ports:
+    - containerPort: 8080
