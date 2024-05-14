@@ -1,7 +1,7 @@
 # Documentación del Proyecto
 
 ## Descripción
-Este proyecto es ...
+Creacion de un namespace y subir un contenedor de docker hub
 
 ## Instalación
 Para ejecutar este proyecto, sigue los siguientes pasos:
@@ -21,10 +21,12 @@ Para ejecutar este proyecto, sigue los siguientes pasos:
     ```
    Ejemplo:
     ```
-    docker build -t jhanmarcogodoylevano/container .
+    docker run -d -p PORT:PORT jhanmarcogodoylevano/container 
     ```
+    <div>
 ![image](https://github.com/JhanmarcoGodoyLevano/PrimerClusterKubernetes/assets/111781171/c992f5ef-fdcb-43d7-be47-0468cebf0c9f)
 
+    </div>
 3. Para guardar los cambios o crear el pod, deployment y service:
     ```
    kubectl apply -f pod.yaml
