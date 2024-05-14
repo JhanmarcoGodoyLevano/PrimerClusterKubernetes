@@ -3,10 +3,10 @@
 ## Descripción
 Creacion de un namespace y subir un contenedor de docker hub
 
-## Instalación
-Para ejecutar este proyecto, sigue los siguientes pasos:
+## Creacion de Imagen
+Crearemos la Imagen de microservicio y lo desplegaremos
 
-1. Creacion de Imagen:
+1. Creamos la imagen:
     ```
     docker build -t <userDockerhub>/<name_image> .
     ```
@@ -23,10 +23,23 @@ Para ejecutar este proyecto, sigue los siguientes pasos:
     ```
     docker run -d -p 8080:8080 jhanmarcogodoylevano/container 
     ```
-
+3. Apagar los contenedores que se estan ejecutando:
+    ```
+    docker stop $(docker ps -q)
+    ```
+    Apagar el contenedor especifico:
+    ```
+    docker stop <ID-contenedor>
+    ```
+   Listar los contenedores:
+    ```
+    docker ps
+    ```
+## el usuario Proviene de Aqui
 ![image](https://github.com/JhanmarcoGodoyLevano/PrimerClusterKubernetes/assets/111781171/c992f5ef-fdcb-43d7-be47-0468cebf0c9f)
 
-3. Para guardar los cambios o crear el pod, deployment y service:
+## Creacion de Namespace
+1. Creamos el namespace:
     ```
    kubectl create namespace <nombre_namespace>
     ```
@@ -34,13 +47,14 @@ Para ejecutar este proyecto, sigue los siguientes pasos:
     ```
    kubectl create namespace vallegrande
     ```
-    Verificar si se creo el namespace
+2. Verificar si se creo el namespace
     ```
    kubectl get namespaces
     ```
     ![image](https://github.com/JhanmarcoGodoyLevano/PrimerClusterKubernetes/assets/111781171/e9e464e7-73f0-4bb1-8ea8-3b9203643b2f)
-
-4. Para guardar los cambios o crear el pod, deployment y service:
+   
+## Configuracion de los archivos YAML
+1. Para guardar los cambios o crear el pod, deployment y service:
     ```
    kubectl apply -f pod.yaml
     ```
@@ -51,7 +65,7 @@ Para ejecutar este proyecto, sigue los siguientes pasos:
    kubectl apply -f service.yaml
     ```
 
-## Publicar en Docker hub
+## Publicar en Docker hub la imagen
 tenemos que publicar el proyecto en docker hub para que el service pueda tener acceso
 
 1. Logearse en docker
