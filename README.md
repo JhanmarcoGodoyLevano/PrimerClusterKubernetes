@@ -110,7 +110,7 @@ Si quieres contribuir a este proyecto, sigue estos pasos:
     ```
 ![image](https://github.com/JhanmarcoGodoyLevano/PrimerClusterKubernetes/assets/111781171/a76718e9-44db-4bd1-887c-76666b809207)
 
-# ¡Proyecto Desplegado! 🚀
+# ¡Contenedor Desplegado en Kubernetes! 🚀
 ## Soporte
 Si necesitas ayuda con este proyecto, por favor contacta a [Jhamarco](mailto:jhanmarco.godoy@vallegrande.edu.pe).
 
