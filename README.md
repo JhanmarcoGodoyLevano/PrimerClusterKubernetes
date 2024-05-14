@@ -35,7 +35,7 @@ Crearemos la Imagen de microservicio y lo desplegaremos
     ```
     docker ps
     ```
-## el usuario Proviene de Aqui
+## El usuario proviene de Aqui
 ![image](https://github.com/JhanmarcoGodoyLevano/PrimerClusterKubernetes/assets/111781171/c992f5ef-fdcb-43d7-be47-0468cebf0c9f)
 
 ## Creacion de Namespace
