@@ -21,7 +21,7 @@ Para ejecutar este proyecto, sigue los siguientes pasos:
     ```
    Ejemplo:
     ```
-    docker run -d -p PORT:PORT jhanmarcogodoylevano/container 
+    docker run -d -p 8080:8080 jhanmarcogodoylevano/container 
     ```
 
 ![image](https://github.com/JhanmarcoGodoyLevano/PrimerClusterKubernetes/assets/111781171/c992f5ef-fdcb-43d7-be47-0468cebf0c9f)
@@ -34,7 +34,7 @@ Para ejecutar este proyecto, sigue los siguientes pasos:
     ```
    kubectl create namespace vallegrande
     ```
-    Verificar si se creo
+    Verificar si se creo el namespace
     ```
    kubectl get namespaces
     ```
